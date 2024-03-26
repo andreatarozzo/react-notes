@@ -984,10 +984,6 @@ While a `context + reducer` combination might be a good idea to handle rather co
 
 In the scenario stated above it is better to prefer state management libraries instead of building something “in house” for the following reasons:
 
-- <b>Complex state management</b>
-
-  As said above when it comes to handle the state of multiple components/application in a centralized way where also asynchronous operations are involved it is better to use a state management library because they provide a very structured way to handle complex states.
-
 - <b>Performances</b>
 
   State management libraries are optimized to be performant
