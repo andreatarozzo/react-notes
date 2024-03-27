@@ -323,20 +323,20 @@ The `diffing algorithm` allows react to have a number of operations to perform a
 
 <br>
 
-## React Renderes and the actual rendering phase
+## React Renderers and the actual rendering phase
 
-Renderes are those packages, such as React DOM and React Native, in charge of actually updating the DOM.
+Renderers are those packages, such as React DOM and React Native, in charge of actually updating the DOM.
 
 React requires this kind of "help" because React itself provides us just the tool to define components alongside using the diffing algorithm to generate the virtual DOM but it doesn't actually have the functionality to update the real DOM.
 This is intended to keep react non platform specific.
 
-The renderes takes the virtual DOM and execute a process to actually update the DOM where it needs to be updated.
+The renderers takes the virtual DOM and execute a process to actually update the DOM where it needs to be updated.
 
 It is necessary to have a renderer used alongside React because React actually communicates with the renderer using some specific properties and methods.
 
 <br>
 
-### How React communicates with the renderes?
+### How React communicates with the renderers?
 
 Whenever a new instance of a component is created ( for class component ) an `updater` field is set to by the renderer and that field will be used to push updates to the renderer queue.
 With hooks, React holds a property `currentDispatcher` which holds the same renderer reference as the `updater` field.
