@@ -715,7 +715,7 @@ interface MyChildProps {
 
 const MyChild = React.forwardRef<HTMLDivElement, MyChildProps>((props, forwardedRef) => {
   return (
-    <div ref={ref}>
+    <div ref={forwardedRef}>
         My Child Component
     </div>
   );
