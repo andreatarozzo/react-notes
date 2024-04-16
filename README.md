@@ -345,7 +345,7 @@ The updates in the queue are handled one by one by the actual changes to the DOM
 
 <br>
 
-## React reconciliation process & React Fiber
+## React reconciliation process & React Fiber
 
 React Fiber is the default reconciler used by React since React 16 which handles animations and responsiveness working in an asynchronous fashion. <br>
 Its main ability is to split the work in chunks or Fibers ( unit of work ) that can be stopped, resumed, aborted and reused easily, process those units of work and then commit the changes in the actual DOM.
