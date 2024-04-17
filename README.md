@@ -432,7 +432,7 @@ Once the work is done in the work in progress tree React swaps the two trees, th
 
 <br>
 
-## Effects in React
+## Effects in React
 
 While React does most of the work asynchronously during the render phase some work like updating the DOM or lifecycle methods of components must be done synchronously during the commit phase.
 
